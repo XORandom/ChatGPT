@@ -168,9 +168,6 @@ def text_handler(message):
                 f.write('Q:' + message.text + '\n')
                 f.write('A:' + answer + '\n')
             bot.send_message(message.chat.id, text=answer)
-            with open('log.txt', 'a+') as f1:
-                f1.write('Q:' + message.text + '\n')
-                f1.write('A:' + answer + '\n')
 
     except:
         bot.send_message(message.chat.id, text='Что-то сломалось 😭, Попробуйте снова')

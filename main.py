@@ -2,8 +2,6 @@ import telebot
 import openai
 import json
 
-# from google_trans_new import google_translator
-
 version = 3
 
 #  Получаем токен бота из файла
